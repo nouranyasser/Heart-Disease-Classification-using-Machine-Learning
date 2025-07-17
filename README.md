@@ -1,109 +1,83 @@
-❤️ Heart Disease Classification using Machine Learning
-📌 Project Overview
+# ❤️ Heart Disease Classification using Machine Learning
 
-This project aims to predict the presence of heart disease in patients using various Machine Learning (ML) and Deep Learning (DL) techniques. By leveraging the UCI Heart Disease dataset, we developed and evaluated multiple models to assist in early diagnosis and healthcare decision-making.
+## 📘 Overview
 
-    Best Model: GRU (Gated Recurrent Unit) — achieved 92.4% accuracy
+This repository presents a project for **classifying heart disease** using both **Machine Learning (ML)** and **Deep Learning (DL)** models, trained on the **UCI Heart Disease Dataset**.  
+The aim is to support medical professionals with accurate, data-driven predictions.
 
-📁 Files
+> 🏆 **Best Performance:** GRU (Gated Recurrent Unit) with **92.4% accuracy**
 
-    Heart Disease Classification using Machine Learning.ipynb: Main notebook containing all the code, models, and visualizations.
+---
 
-    README.md: Project documentation.
+---
 
-🧠 Techniques Used
-✅ Machine Learning Models:
+## 📊 Dataset Information
 
-    Logistic Regression
+- **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/heart+Disease)
+- **Samples:** 303
+- **Features:** 13 clinical attributes (e.g., age, cholesterol, chest pain, etc.)
+- **Target:** Presence or absence of heart disease
 
-    Support Vector Machine (SVM)
+---
 
-    K-Nearest Neighbors (KNN)
+## 🧠 Models Implemented
 
-    Random Forest
+### ✅ Machine Learning
+- Logistic Regression
+- Support Vector Machine (SVM)
+- K-Nearest Neighbors (KNN)
+- Random Forest
+- Gradient Boosting
 
-    Gradient Boosting
+### ✅ Deep Learning
+- Deep Neural Network (DNN)
+- Gated Recurrent Unit (GRU)
+- Long Short-Term Memory (LSTM)
 
-✅ Deep Learning Models:
+---
 
-    Deep Neural Network (DNN)
+## 🔁 Workflow
 
-    GRU (Gated Recurrent Unit)
+1. **Data Preprocessing**
+   - Handle missing values
+   - Normalize / Scale data
+   - Encode categorical variables
+2. **Model Training**
+   - Train/test split
+   - Fit models
+3. **Evaluation**
+   - Accuracy, Precision, Recall, F1-score
+   - Confusion Matrix
+   - Visualization of metrics
 
-    LSTM (Long Short-Term Memory)
+---
 
-📊 Dataset
+## 📈 Results Summary
 
-    Source: UCI Heart Disease Dataset
+| Model               | Accuracy |
+|--------------------|----------|
+| Logistic Regression | ~84%     |
+| SVM                | ~85%     |
+| KNN                | ~83%     |
+| Random Forest      | ~88%     |
+| Gradient Boosting  | ~89%     |
+| **GRU**            | **92.4%** |
+| LSTM               | ~91%     |
 
-    Records: 303
+---
 
-    Features: 13 clinical attributes (e.g., age, sex, chest pain, cholesterol)
+## 🚀 How to Run the Project
 
-⚙️ Workflow
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/your-username/heart-disease-classification.git
+   cd heart-disease-classification
 
-    Data Preprocessing
+---
 
-        Handle missing values
+Let me know if you want:
+- a **live version** on GitHub Pages,
+- a **badge section** (e.g., Python version, license, etc.),
+- or a generated `requirements.txt`.
 
-        Normalize/scale data
 
-        Encode categorical features
-
-    Model Training
-
-        Train/test split
-
-        Fit ML/DL models
-
-    Evaluation
-
-        Accuracy, Precision, Recall, F1-score
-
-        Confusion matrices
-
-        Comparison charts
-
-🔍 Results Summary
-Model	Accuracy
-Logistic Regression	~84%
-SVM	~85%
-KNN	~83%
-Random Forest	~88%
-Gradient Boosting	~89%
-GRU	92.4%
-LSTM	~91%
-📌 Conclusion
-
-The results show that deep learning models, especially GRU, outperform classical ML models in predicting heart disease from structured medical data. This highlights the potential of AI in healthcare diagnostics.
-🚀 How to Run
-
-    Clone the repository:
-
-git clone https://github.com/yourusername/heart-disease-classification.git
-cd heart-disease-classification
-
-Install requirements:
-
-pip install -r requirements.txt
-
-Run the Jupyter Notebook:
-
-    jupyter notebook "Heart Disease Classification using Machine Learning.ipynb"
-
-👩‍🔬 Author
-
-    Nouran Yasser Mohammed
-    Supervised by:
-
-        Dr. Samir E. Elmougy
-
-        Dr. Mohammed Haggag
-
-📚 References
-
-    Sumon (2025)
-
-    Yi (2024)
-
-    García-Ordás (2023)
